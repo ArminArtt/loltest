@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background: #111;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 18px;
+  max-width: 460px;
+  width: 100%;
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(255,255,255,0.05);
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade { 
+  from {opacity:0; transform:translateY(10px);} 
+  to {opacity:1;} 
+}
+
+.avatar {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 12px #000;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+p.bio {
+  font-size: 1.05rem;
+  color: #bbb;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.artist-exp {
+  background: #151515;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #ccc;
+  border: 1px solid #222;
+}
+
+.artist-exp h2 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  font-size: 1.7rem;
+  color: #fff;
+  transition: 0.25s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.socials a:hover { 
+  transform: scale(1.15); 
+  color: #ccc; 
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  background: #222;
+  padding: 6px 8px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  font-size: 0.8rem;
+  width: 140px;
+  text-align: center;
+  color: #fff;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#copyMsg {
+  margin-top: 20px;
+  color: #a0ffa0;
+  min-height: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
