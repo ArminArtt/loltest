@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Armin — Developer & Artist</title>
+  <meta name="description" content="Armin — Developer, Discord bot dev, and digital artist. Portfolio, projects and contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- OpenGraph for nicer sharing -->
+  <meta property="og:title" content="Armin — Developer & Artist" />
+  <meta property="og:description" content="Developer • Discord Bot Engineer • Digital Artist — portfolio & services" />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <!-- snow container: JS will append snowflakes to body -->
+  <div id="global-loader" class="loader">
+    <div class="loader-inner">
+      <h1>Loading...</h1>
+      <div class="time-date" id="loader-datetime"></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#">vjvc</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#artist">Artist</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="content" role="main" aria-live="polite">
+    <section id="hero" class="hero">
+      <img class="profile-pic" src="https://i.postimg.cc/JhJJNnrm/4c41990de8f399da2ab7efa13aab49a7.jpg" alt="Armin profile" />
+      <h1 class="title">Armin <span class="muted">— vjvc</span></h1>
+      <p class="lead">
+        Developer • Discord Bot Engineer • Digital Artist<br />
+        I build modern web experiences, custom bots and stylized artwork.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn">See Projects</a>
+        <a href="#contact" class="btn ghost">Contact</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-text">
+        Hi — I'm Armin. I create smooth, user-friendly web apps with React and craft custom Discord bots.
+        I also work as a digital artist (4 years) — blending visual art with modern UI.
+      </p>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-label"><span>JavaScript</span><span>34%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="34%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-label"><span>React</span><span>63%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="63%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-label"><span>CSS Animations</span><span>46%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="46%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-label"><span>Node.js</span><span>23%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="23%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-label"><span>Discord Bot Development</span><span>98%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="98%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-label"><span>Python</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="card-list">
+        <article class="card">
+          <h3>Modern Portfolio</h3>
+          <p>React + CSS animations. Responsive and fast.</p>
+          <a class="link" href="#" target="_blank" rel="noopener">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Discord Bot (Custom)</h3>
+          <p>Moderation, music and custom commands for communities.</p>
+          <a class="link" href="#" target="_blank" rel="noopener">Details</a>
+        </article>
+
+        <article class="card">
+          <h3>Interactive Web Apps</h3>
+          <p>Small performant apps focusing on UX and accessibility.</p>
+          <a class="link" href="#" target="_blank" rel="noopener">Open</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="artist" class="section">
+      <h2 class="section-title">Artist Experience</h2>
+      <div class="projects-list">
+        <ul>
+          <li><strong>4 years</strong> professional as a digital artist</li>
+          <li>Character design, illustration, stylized artwork</li>
+          <li>Commissioned pieces for communities & streamers</li>
+          <li>Integrate art with modern UI/UX concepts</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="projects-list">
+        <ul>
+          <li>Frontend Developer at XYZ Company — 2 years</li>
+          <li>Freelance Discord Bot Developer — 3 years</li>
+          <li>Open-source contributor (JS/React)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-card">
+        <p>Email: <a href="mailto:arminrhgozar@gmail.com">arminrhgozar@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/ArminArtt" target="_blank" rel="noopener">ArminArtt</a></p>
+        <p>Discord: <span class="mono">vjvc</span></p>
+      </div>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          <span class="sr-only">Name</span>
+          <input name="name" id="name" type="text" placeholder="Your name" required />
+        </label>
+        <label>
+          <span class="sr-only">Email</span>
+          <input name="email" id="email" type="email" placeholder="Your email" required />
+        </label>
+        <label>
+          <span class="sr-only">Message</span>
+          <textarea name="message" id="message" placeholder="Write your message..." rows="5" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Armin — vjvc</p>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
